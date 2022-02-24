@@ -1,0 +1,6 @@
+ISCOTIMESTAMPTZ %{CISCOTIMESTAMP}( %{TZ})?
+NEXUSTIMESTAMP %{YEAR} %{MONTH} %{MONTHDAY} %{TIME}( %{TZ})?
+
+#Патерн %{TZ} почему-то не сработал, поэтому определим его по другому
+CISCOTZ %{WORD}
+CISCOTIMESTAMPTZ %{CISCOTIMESTAMP}( %{CISCOTZ})?
